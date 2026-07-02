@@ -1,0 +1,187 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --radius: 0.5rem;
+  --background: oklch(0.982 0.007 142);
+  --foreground: oklch(0.16 0.02 168);
+  --card: oklch(0.998 0.003 142);
+  --card-foreground: oklch(0.16 0.02 168);
+  --popover: oklch(0.998 0.003 142);
+  --popover-foreground: oklch(0.16 0.02 168);
+  --primary: oklch(0.36 0.12 166);
+  --primary-foreground: oklch(0.985 0.007 142);
+  --secondary: oklch(0.94 0.018 147);
+  --secondary-foreground: oklch(0.25 0.04 166);
+  --muted: oklch(0.946 0.012 142);
+  --muted-foreground: oklch(0.43 0.025 168);
+  --accent: oklch(0.72 0.17 155);
+  --accent-foreground: oklch(0.14 0.024 168);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.86 0.018 148);
+  --input: oklch(0.86 0.018 148);
+  --ring: oklch(0.58 0.14 154);
+  --ink: oklch(0.13 0.026 170);
+  --panel: oklch(0.18 0.028 170);
+  --panel-foreground: oklch(0.965 0.012 142);
+  --signal: oklch(0.74 0.18 154);
+  --signal-amber: oklch(0.78 0.145 83);
+  --signal-cyan: oklch(0.72 0.112 205);
+}
+
+.dark {
+  --background: oklch(0.15 0.018 170);
+  --foreground: oklch(0.94 0.012 142);
+  --card: oklch(0.19 0.022 170);
+  --card-foreground: oklch(0.94 0.012 142);
+  --popover: oklch(0.19 0.022 170);
+  --popover-foreground: oklch(0.94 0.012 142);
+  --primary: oklch(0.74 0.18 154);
+  --primary-foreground: oklch(0.13 0.024 170);
+  --secondary: oklch(0.25 0.03 170);
+  --secondary-foreground: oklch(0.91 0.018 142);
+  --muted: oklch(0.24 0.024 170);
+  --muted-foreground: oklch(0.73 0.025 142);
+  --accent: oklch(0.64 0.13 199);
+  --accent-foreground: oklch(0.12 0.02 170);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(0.34 0.026 170);
+  --input: oklch(0.34 0.026 170);
+  --ring: oklch(0.74 0.18 154);
+  --ink: oklch(0.965 0.012 142);
+  --panel: oklch(0.105 0.02 170);
+  --panel-foreground: oklch(0.965 0.012 142);
+  --signal: oklch(0.79 0.18 154);
+  --signal-amber: oklch(0.82 0.14 83);
+  --signal-cyan: oklch(0.77 0.12 205);
+}
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ink: var(--ink);
+  --color-panel: var(--panel);
+  --color-panel-foreground: var(--panel-foreground);
+  --color-signal: var(--signal);
+  --color-signal-amber: var(--signal-amber);
+  --color-signal-cyan: var(--signal-cyan);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family:
+      ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      sans-serif;
+    text-rendering: optimizeLegibility;
+    background-image:
+      radial-gradient(
+        circle at 20% 0%,
+        color-mix(in oklch, var(--signal) 10%, transparent),
+        transparent 28rem
+      ),
+      linear-gradient(var(--background), var(--background));
+  }
+
+  a {
+    @apply underline-offset-4 transition-colors;
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    @apply outline-2 outline-offset-4 outline-ring;
+  }
+
+  ::selection {
+    background: color-mix(in oklch, var(--signal) 42%, transparent);
+  }
+}
+
+@layer utilities {
+  .portfolio-container {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .technical-grid {
+    background-image:
+      linear-gradient(
+        color-mix(in oklch, var(--border) 42%, transparent) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        90deg,
+        color-mix(in oklch, var(--border) 42%, transparent) 1px,
+        transparent 1px
+      );
+    background-size: 34px 34px;
+  }
+
+  .signal-card {
+    @apply border bg-card shadow-sm;
+    box-shadow:
+      0 1px 0 color-mix(in oklch, white 34%, transparent) inset,
+      0 24px 70px color-mix(in oklch, var(--foreground) 8%, transparent);
+  }
+
+  .panel-card {
+    @apply border bg-panel text-panel-foreground shadow-sm;
+    border-color: color-mix(in oklch, var(--panel-foreground) 12%, transparent);
+  }
+
+  .section-band {
+    @apply border-b py-14 sm:py-16;
+  }
+
+  .fine-label {
+    @apply text-xs font-semibold uppercase tracking-[0.14em] text-primary;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
