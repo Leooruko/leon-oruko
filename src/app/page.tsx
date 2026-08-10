@@ -1,3 +1,4 @@
+import { CaseStudyTeaser } from "@/components/portfolio/case-study-teaser";
 import { Contact } from "@/components/portfolio/contact";
 import { CurrentFocus } from "@/components/portfolio/current-focus";
 import { Education } from "@/components/portfolio/education";
@@ -34,6 +35,7 @@ export default function Home() {
         <Hero />
         <CurrentFocus />
         <ExperienceTimeline />
+        <CaseStudyTeaser />
         <GitHubActivity />
         <SkillMatrix />
         <Education />
