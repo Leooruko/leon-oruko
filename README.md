@@ -3,6 +3,8 @@
 Personal portfolio for Leon Oruko. The public site is written in Leon's voice
 and presents his engineering, software, data, mobile, backend, and AI work.
 
+**Live site:** https://my-portfolio-blue-eta-78.vercel.app
+
 The site is implemented as a single-page Next.js App Router portfolio with
 source-backed content from:
 
