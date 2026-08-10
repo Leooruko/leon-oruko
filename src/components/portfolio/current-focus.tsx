@@ -10,24 +10,24 @@ import { SectionHeading } from "./section-heading";
 
 const focusAreas = [
   {
-    title: "AI product workflows",
+    title: "Turning business questions into working AI tools",
     icon: BrainCircuit,
-    copy: "OpenAI and Anthropic API work, structured prompts, tool calling, agent logic, and model/API evaluation.",
+    copy: "AI features built to be used, not demoed — tool calling and agent logic that hold up against real questions.",
   },
   {
-    title: "Backend APIs",
+    title: "Backend systems that connect data to action",
     icon: Database,
-    copy: "FastAPI services and backend workflows that support AI-enabled product behavior and application services.",
+    copy: "FastAPI services that sit behind the data, so a system can act on what it finds, not just report it.",
   },
   {
-    title: "Mobile applications",
+    title: "Tools staff and customers actually use",
     icon: Smartphone,
-    copy: "Flutter and React Native experience from mobile streaming and client behavior tracking applications.",
+    copy: "Flutter and React Native experience from a shipped streaming app and a client-tracking tool built for non-technical staff.",
   },
   {
-    title: "Data and prediction",
+    title: "Making sense of data that's hard to use",
     icon: ChartNoAxesCombined,
-    copy: "Power BI dashboards, customer behavior analysis, predictive modelling, and dataset preparation.",
+    copy: "Power BI dashboards, behavioral analysis, and prediction models built from raw client data.",
   },
   {
     title: "Engineering systems",
@@ -42,8 +42,8 @@ export function CurrentFocus() {
       <div className="portfolio-container">
         <SectionHeading
           eyebrow="Current Focus"
-          title="Engineering AI Systems and Intelligent Applications"
-          description="My current work focuses on connecting AI product engineering with backend APIs, model workflows, mobile application experience, and an electrical/electronics engineering foundation."
+          title="How that plays out in practice"
+          description="The same approach — understand the problem, then pick the right system — applied across AI, backend, data, and mobile work."
         />
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">

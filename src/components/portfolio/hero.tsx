@@ -27,16 +27,13 @@ export function Hero() {
                 <span className="inline-flex rounded-md border border-white/12 bg-white/8 px-3 py-2 text-sm font-medium text-white/80">
                   AI Engineer at PixeSci
                 </span>
-                <span className="hidden rounded-md border border-white/12 bg-white/8 px-3 py-2 text-sm font-medium text-white/80 sm:inline-flex">
-                  JKUAT Engineering Student
-                </span>
               </div>
 
               <p className="mt-8 text-sm font-semibold uppercase tracking-[0.18em] text-signal">
-                Software, data, backend and AI systems
+                Business problem-solving through software and AI
               </p>
               <h1 className="mt-4 max-w-4xl text-balance text-2xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
-                Transforming ideas into production-ready AI systems, backend services, and data-driven applications.
+                I solve operational problems with practical software and AI systems.
               </h1>
               <p className="mt-5 max-w-3xl text-pretty text-base leading-7 text-white/72 sm:text-lg sm:leading-8">
                 {profile.summary}

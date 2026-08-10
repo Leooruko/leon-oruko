@@ -27,6 +27,9 @@ export function CaseStudyTeaser() {
           <p className="text-pretty leading-7 text-muted-foreground">
             {featured.oneLiner}
           </p>
+          <p className="text-sm text-muted-foreground">
+            Built for internal use against a live operational database — not a prototype running on sample data.
+          </p>
           <Link
             href={`/case-studies/${featured.slug}`}
             className="mt-2 inline-flex w-fit items-center gap-2 text-sm font-semibold text-primary no-underline hover:underline"

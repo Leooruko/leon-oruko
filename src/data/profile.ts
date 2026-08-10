@@ -19,9 +19,9 @@ export const profile = {
   educationHeadline:
     "Electrical and Electronics Engineering student at JKUAT",
   positioning:
-    "I build across mobile, data, backend, and AI-enabled software systems while studying Electrical and Electronics Engineering at JKUAT.",
+    "I investigate operational problems, then build the systems that solve them.",
   summary:
-    "I am a Nairobi-based Electrical and Electronics Engineering student at JKUAT and an AI Engineer at PixeSci. My work spans the intersection of software engineering, artificial intelligence, and data-driven systems, with a focus on building practical solutions for real-world challenges. I contribute to the development of AI-powered product features, FastAPI backend services, mobile applications, interactive dashboards, predictive models, and intelligent automation workflows designed to improve efficiency, usability, and decision-making. My interests include applied machine learning, backend architecture, workflow orchestration, data engineering, and creating scalable digital products that bridge engineering principles with modern AI technologies.",
+    "The problems I look at are usually the same shape: business data trapped in a database, ERP, or spreadsheet that only a few people can use, workflows that never got automated, and tools that don't talk to each other. I investigate what's actually happening before proposing what to build, then choose the backend system, internal tool, or AI system that fits — not the other way around. That approach sits on top of an engineering background (Electrical and Electronics Engineering at JKUAT) and current work as an AI Engineer at PixeSci.",
   languages: [
     { name: "English", level: "Fluent" },
     { name: "Spanish", level: "Intermediate reading and listening" },
