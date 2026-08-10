@@ -12,8 +12,8 @@ export function Contact() {
         <div className="grid gap-8 lg:grid-cols-[0.82fr_1.18fr] lg:items-start">
           <SectionHeading
             eyebrow="Contact"
-            title="Let us connect"
-            description="For software, data, mobile, and AI engineering opportunities, reach me by email or review my public GitHub profile."
+            title="Start with the problem"
+            description="The problems I'm best suited for: business data trapped in a database, ERP, or spreadsheet that only a few people can use; staff working around systems instead of with them; workflows nobody's had time to automate. I investigate what's actually happening first, then build the backend, internal tooling, or AI system that fits. If that sounds like your business, email me and tell me what's not working."
           />
 
           <div className="grid gap-4 sm:grid-cols-2">
