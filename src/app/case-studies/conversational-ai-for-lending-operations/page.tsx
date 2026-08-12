@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
+import { DataArtifact } from "@/components/portfolio/data-artifact";
 import { SiteFooter } from "@/components/site/site-footer";
 import { SiteHeader } from "@/components/site/site-header";
 import { getCaseStudy } from "@/data/case-studies";
@@ -74,6 +75,20 @@ export default function CaseStudyPage() {
             </div>
           </section>
         ))}
+
+        <section className="section-band bg-card">
+          <div className="portfolio-container max-w-3xl">
+            <DataArtifact
+              title="Loan portfolio data layer — sanitized sample"
+              description="A sanitized sample of the operational data layer behind this system: the shape of records after they move from the business's ERP into a normalized PostgreSQL database, enriched with a derived operational field. Real customer-identifying fields are excluded entirely, not just masked."
+              csvUrl="/data/lending-ops/lending-ops-loan-portfolio-sample.csv"
+              csvDownloadName="lending-ops-loan-portfolio-sample.csv"
+              pdfUrl="/data/lending-ops/lending-ops-data-pipeline-documentation.pdf"
+              pdfDownloadName="lending-ops-data-pipeline-documentation.pdf"
+              note="60 sample rows across 15 columns. Values are synthetically generated for demonstration; loan statuses and repayment-cycle options match the production schema."
+            />
+          </div>
+        </section>
 
         <section className="section-band bg-background">
           <div className="portfolio-container">
