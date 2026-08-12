@@ -10,6 +10,7 @@ export const profile = {
   phone: "+254 711 223 713",
   phoneHref: "tel:+254711223713",
   github: "https://github.com/Leooruko",
+  resumeUrl: "/resume/Leon-Oruko-Resume.pdf",
   linkedinLabel: "linkedin.com/in/leon-oruko",
   linkedinCandidate: "https://www.linkedin.com/in/leon-oruko",
   linkedinVerified: true,
