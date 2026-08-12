@@ -1,6 +1,7 @@
 import Image from "next/image";
 import {
   ArrowUpRight,
+  FileText,
   Github,
   Linkedin,
   MapPin,
@@ -59,6 +60,16 @@ export function Hero() {
                 >
                   <Linkedin aria-hidden="true" className="size-4" />
                   My LinkedIn
+                  <ArrowUpRight aria-hidden="true" className="size-4" />
+                </a>
+                <a
+                  href={profile.resumeUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex min-h-11 items-center gap-2 rounded-md border border-white/16 bg-white/8 px-5 py-3 text-sm font-semibold text-white no-underline hover:bg-white/14"
+                >
+                  <FileText aria-hidden="true" className="size-4" />
+                  View Resume
                   <ArrowUpRight aria-hidden="true" className="size-4" />
                 </a>
               </div>

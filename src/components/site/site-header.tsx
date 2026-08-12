@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { FileText, Github, Linkedin, Mail } from "lucide-react";
 
 import { navigationItems } from "@/data/navigation";
 import { profile } from "@/data/profile";
@@ -61,6 +61,15 @@ export function SiteHeader() {
             aria-label="Open my LinkedIn profile"
           >
             <Linkedin aria-hidden="true" className="size-4" />
+          </a>
+          <a
+            href={profile.resumeUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="hidden size-10 place-items-center rounded-md border bg-card text-foreground no-underline hover:border-primary hover:text-primary sm:grid"
+            aria-label="View my resume"
+          >
+            <FileText aria-hidden="true" className="size-4" />
           </a>
           <ContactDialog
             variant="icon"
