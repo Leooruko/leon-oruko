@@ -10,7 +10,7 @@ import { getCaseStudy } from "@/data/case-studies";
 const caseStudy = getCaseStudy("conversational-ai-for-lending-operations")!;
 
 export const metadata: Metadata = {
-  title: \`\${caseStudy.title} — Case Study\`,
+  title: `${caseStudy.title} — Case Study`,
   description: caseStudy.oneLiner,
 };
 
@@ -55,7 +55,7 @@ export default function CaseStudyPage() {
         {caseStudy.stages.map((stage, index) => (
           <section
             key={stage.stage}
-            className={\`section-band \${index % 2 === 0 ? "bg-background" : "bg-card"}\`}
+            className={`section-band ${index % 2 === 0 ? "bg-background" : "bg-card"}`}
           >
             <div className="portfolio-container max-w-3xl">
               <p className="fine-label">{stage.stage}</p>
